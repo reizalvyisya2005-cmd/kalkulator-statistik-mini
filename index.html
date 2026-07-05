@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Statistik Mini</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">📊</div>
+        <div>
+          <h1>Kalkulator Statistik Mini</h1>
+          <p>Aplikasi Statistik by_Reizalvy_Isya_2502189</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <button class="menu-item active" data-target="dashboardSection">
+          <span class="menu-icon">🏠</span>
+          <span class="menu-text">Dashboard</span>
+        </button>
+
+        <button class="menu-item" data-target="materiSection">
+          <span class="menu-icon">📘</span>
+          <span class="menu-text">Materi & Panduan Statistik</span>
+        </button>
+
+        <button class="menu-item" data-target="descriptiveSection">
+          <span class="menu-icon">📊</span>
+          <span class="menu-text">Uji Deskriptif</span>
+        </button>
+
+        <button class="menu-item" data-target="validitySection">
+          <span class="menu-icon">✅</span>
+          <span class="menu-text">Uji Validitas</span>
+        </button>
+
+        <button class="menu-item" data-target="reliabilitySection">
+          <span class="menu-icon">🛡️</span>
+          <span class="menu-text">Uji Reliabilitas</span>
+        </button>
+
+        <button class="menu-item" data-target="zSection">
+          <span class="menu-icon">📐</span>
+          <span class="menu-text">Kalkulator Nilai Z</span>
+        </button>
+
+        <button class="menu-item" data-target="sampleSection">
+          <span class="menu-icon">🧮</span>
+          <span class="menu-text">Kalkulator Ukuran Sampel</span>
+        </button>
+
+        <button class="menu-item" data-target="hypothesisSection">
+          <span class="menu-icon">🧠</span>
+          <span class="menu-text">Uji Hipotesis</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <strong>Versi:</strong> 1.0 Final<br />
+        Statistik Pro App
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+      <!-- DASHBOARD -->
+      <section id="dashboardSection" class="content-section active-section">
+        <div class="hero-card">
+          <div>
+            <h2>Dashboard Aplikasi Statistik</h2>
+            <p>
+              Selamat datang di <strong>Statistik Pro App</strong>. Aplikasi ini dirancang
+              untuk membantu perhitungan statistik penelitian secara lebih cepat,
+              rapi, dan mudah dipahami, baik untuk analisis data maupun pembelajaran konsep statistik.
+            </p>
+            <div class="hero-badge">Menu 1</div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="info-card">
+            <h3>8 Menu Utama</h3>
+            <p>Aplikasi dilengkapi 8 menu statistik dan materi pembelajaran.</p>
+          </div>
+          <div class="info-card">
+            <h3>3 Uji Inti</h3>
+            <p>Uji Deskriptif, Uji Validitas, dan Uji Reliabilitas.</p>
+          </div>
+          <div class="info-card">
+            <h3>3 Kalkulator</h3>
+            <p>Nilai Z, Ukuran Sampel, dan Uji Hipotesis.</p>
+          </div>
+          <div class="info-card">
+            <h3>Materi Panduan</h3>
+            <p>Berisi teori, rumus, langkah uji, dan penjelasan sederhana.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tentang Aplikasi</h3>
+          <p>
+            <strong>Statistik Pro App</strong> adalah aplikasi statistik berbasis
+            <strong>HTML, CSS, dan JavaScript</strong> yang dibuat untuk membantu mahasiswa
+            dalam mengolah data penelitian, memahami hasil analisis, serta mempelajari konsep statistik dasar hingga pengujian hipotesis.
+          </p>
+
+          <h4>Tujuan Aplikasi</h4>
+          <ul>
+            <li>Membantu pengolahan data penelitian secara cepat.</li>
+            <li>Menyediakan hasil statistik yang rapi dan mudah dibaca.</li>
+            <li>Memberikan interpretasi otomatis agar hasil lebih mudah dipahami.</li>
+            <li>Menjadi media belajar statistik penelitian bagi pemula.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MATERI & PANDUAN -->
+      <section id="materiSection" class="content-section">
+        <div class="card">
+          <h2>Materi & Panduan Statistik</h2>
+          <p class="section-desc">
+            Bagian ini berisi ringkasan teori dan panduan sederhana dari materi statistik yang sering dipakai dalam penelitian.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>1. Uji Deskriptif</h3>
+          <p><strong>Tujuan:</strong> menggambarkan data secara umum tanpa menarik kesimpulan inferensial.</p>
+          <ul>
+            <li>Menampilkan jumlah data, mean, median, modus, minimum, maksimum, range, varians, dan standar deviasi.</li>
+            <li>Cocok untuk melihat kecenderungan pusat dan sebaran data.</li>
+          </ul>
+          <div class="formula-box">
+            <p><strong>Mean:</strong> x̄ = Σx / n</p>
+            <p><strong>Range:</strong> nilai maksimum − nilai minimum</p>
+            <p><strong>Standar deviasi:</strong> ukuran penyebaran data dari rata-rata</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>2. Uji Validitas</h3>
+          <p><strong>Tujuan:</strong> menguji apakah setiap item pertanyaan benar-benar mengukur variabel yang ingin diukur.</p>
+          <ul>
+            <li>Menggunakan korelasi item dengan total skor.</li>
+            <li>Item dinyatakan valid jika <strong>r hitung ≥ r tabel</strong>.</li>
+          </ul>
+          <div class="formula-box">
+            <p><strong>Dasar keputusan:</strong></p>
+            <ul>
+              <li>Jika r hitung ≥ r tabel → item valid</li>
+              <li>Jika r hitung &lt; r tabel → item tidak valid</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>3. Uji Reliabilitas (Cronbach’s Alpha)</h3>
+          <p><strong>Tujuan:</strong> menguji konsistensi jawaban antar item dalam satu variabel.</p>
+          <ul>
+            <li>Semakin tinggi nilai alpha, semakin konsisten instrumen.</li>
+            <li>Umumnya reliabel jika <strong>α ≥ 0,70</strong>.</li>
+          </ul>
+          <div class="formula-box">
+            <p><strong>Cronbach’s Alpha:</strong></p>
+            <p>α = (k / (k − 1)) × (1 − (Σ varians item / varians total))</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>4. Kalkulator Nilai Z</h3>
+          <p><strong>Tujuan:</strong> menentukan nilai Z berdasarkan tingkat kepercayaan atau digunakan pada uji hipotesis proporsi/rata-rata tertentu.</p>
+          <ul>
+            <li>90% → Z = 1,645</li>
+            <li>95% → Z = 1,96</li>
+            <li>99% → Z = 2,576</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>5. Kalkulator Ukuran Sampel</h3>
+          <p><strong>Tujuan:</strong> menentukan jumlah sampel minimal penelitian.</p>
+          <div class="formula-box">
+            <p><strong>Populasi besar / tidak diketahui:</strong></p>
+            <p>n = (Z² × p × (1 − p)) / e²</p>
+            <p><strong>Jika populasi terbatas:</strong></p>
+            <p>n<sub>f</sub> = n / (1 + ((n − 1) / N))</p>
+          </div>
+          <ul>
+            <li>Z = tingkat kepercayaan</li>
+            <li>p = proporsi awal (biasanya 0,5 jika belum diketahui)</li>
+            <li>e = margin of error</li>
+            <li>N = jumlah populasi</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>6. Uji Hipotesis</h3>
+          <p><strong>Tujuan:</strong> menguji dugaan penelitian berdasarkan data sampel.</p>
+          <ul>
+            <li>Hipotesis nol (H₀): tidak ada pengaruh / tidak ada perbedaan / tidak ada hubungan.</li>
+            <li>Hipotesis alternatif (H₁): ada pengaruh / ada perbedaan / ada hubungan.</li>
+          </ul>
+          <div class="formula-box">
+            <p><strong>Keputusan umum:</strong></p>
+            <ul>
+              <li>Jika p-value &lt; 0,05 → tolak H₀</li>
+              <li>Jika p-value ≥ 0,05 → gagal menolak H₀</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Alur Belajar yang Disarankan</h3>
+          <ol class="ordered-list">
+            <li>Pahami dulu statistik deskriptif.</li>
+            <li>Lanjut ke validitas item pertanyaan.</li>
+            <li>Cek reliabilitas instrumen.</li>
+            <li>Pelajari ukuran sampel dan nilai Z.</li>
+            <li>Terakhir, pahami logika uji hipotesis.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- UJI DESKRIPTIF -->
+      <section id="descriptiveSection" class="content-section">
+        <div class="card">
+          <h2>Uji Deskriptif</h2>
+          <p class="section-desc">
+            Masukkan data angka, pisahkan dengan koma. Contoh: 70, 80, 65, 90, 75
+          </p>
+
+          <div class="form-grid">
+            <div class="input-group full-width">
+              <label for="descriptiveInput">Data Numerik</label>
+              <textarea id="descriptiveInput" rows="5" placeholder="Contoh: 70, 80, 65, 90, 75"></textarea>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="runDescriptive()">Hitung Uji Deskriptif</button>
+            <button class="btn btn-secondary" onclick="fillDescriptiveExample()">Contoh Data</button>
+            <button class="btn btn-danger" onclick="resetDescriptive()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Uji Deskriptif</h3>
+          <div id="descriptiveResult" class="result-box empty-state">Belum ada hasil uji deskriptif.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('descriptiveInterpretation')">
+            Lihat Interpretasi Uji Deskriptif
+          </button>
+
+          <div id="descriptiveInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Uji Deskriptif</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah data dihitung.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UJI VALIDITAS -->
+      <section id="validitySection" class="content-section">
+        <div class="card">
+          <h2>Uji Validitas</h2>
+          <p class="section-desc">
+            Format input: <strong>satu responden per baris</strong>, dan nilai antar item dipisahkan dengan koma.
+            <br>Contoh 3 item:
+          </p>
+          <div class="formula-box">
+            4,5,4<br>
+            3,4,4<br>
+            5,5,5<br>
+            4,4,3
+          </div>
+
+          <div class="form-grid">
+            <div class="input-group full-width">
+              <label for="validityInput">Data Responden x Item</label>
+              <textarea id="validityInput" rows="8" placeholder="Masukkan data responden per baris..."></textarea>
+            </div>
+
+            <div class="input-group">
+              <label for="rTableInput">Nilai r tabel</label>
+              <input type="number" id="rTableInput" step="0.001" value="0.30" />
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="runValidity()">Hitung Uji Validitas</button>
+            <button class="btn btn-secondary" onclick="fillValidityExample()">Contoh Data</button>
+            <button class="btn btn-danger" onclick="resetValidity()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Uji Validitas</h3>
+          <div id="validityResult" class="result-box empty-state">Belum ada hasil uji validitas.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('validityInterpretation')">
+            Lihat Interpretasi Uji Validitas
+          </button>
+
+          <div id="validityInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Uji Validitas</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah data dihitung.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UJI RELIABILITAS -->
+      <section id="reliabilitySection" class="content-section">
+        <div class="card">
+          <h2>Uji Reliabilitas (Cronbach's Alpha)</h2>
+          <p class="section-desc">
+            Format input sama seperti validitas: <strong>satu responden per baris</strong>, nilai antar item dipisahkan koma.
+          </p>
+
+          <div class="form-grid">
+            <div class="input-group full-width">
+              <label for="reliabilityInput">Data Responden x Item</label>
+              <textarea id="reliabilityInput" rows="8" placeholder="Masukkan data responden per baris..."></textarea>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="runReliability()">Hitung Reliabilitas</button>
+            <button class="btn btn-secondary" onclick="fillReliabilityExample()">Contoh Data</button>
+            <button class="btn btn-danger" onclick="resetReliability()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Uji Reliabilitas</h3>
+          <div id="reliabilityResult" class="result-box empty-state">Belum ada hasil uji reliabilitas.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('reliabilityInterpretation')">
+            Lihat Interpretasi Reliabilitas
+          </button>
+
+          <div id="reliabilityInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Uji Reliabilitas</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah data dihitung.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KALKULATOR NILAI Z -->
+      <section id="zSection" class="content-section">
+        <div class="card">
+          <h2>Kalkulator Nilai Z</h2>
+          <p class="section-desc">Pilih tingkat kepercayaan untuk mendapatkan nilai Z.</p>
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="zConfidence">Tingkat Kepercayaan</label>
+              <select id="zConfidence">
+                <option value="1.645">90% (Z = 1,645)</option>
+                <option value="1.96" selected>95% (Z = 1,96)</option>
+                <option value="2.576">99% (Z = 2,576)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="calculateZ()">Hitung Nilai Z</button>
+            <button class="btn btn-danger" onclick="resetZ()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Kalkulator Nilai Z</h3>
+          <div id="zResult" class="result-box empty-state">Belum ada hasil nilai Z.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('zInterpretation')">
+            Lihat Interpretasi Nilai Z
+          </button>
+
+          <div id="zInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Nilai Z</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah perhitungan dilakukan.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KALKULATOR UKURAN SAMPEL -->
+      <section id="sampleSection" class="content-section">
+        <div class="card">
+          <h2>Kalkulator Ukuran Sampel</h2>
+          <p class="section-desc">
+            Hitung ukuran sampel minimal untuk populasi besar atau populasi terbatas.
+          </p>
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="sampleConfidence">Tingkat Kepercayaan</label>
+              <select id="sampleConfidence">
+                <option value="1.645">90% (Z = 1,645)</option>
+                <option value="1.96" selected>95% (Z = 1,96)</option>
+                <option value="2.576">99% (Z = 2,576)</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="sampleError">Margin of Error (e)</label>
+              <input type="number" id="sampleError" step="0.001" value="0.05" />
+            </div>
+
+            <div class="input-group">
+              <label for="sampleProportion">Proporsi Awal (p)</label>
+              <input type="number" id="sampleProportion" step="0.01" value="0.5" />
+            </div>
+
+            <div class="input-group">
+              <label for="samplePopulation">Jumlah Populasi (N) - opsional</label>
+              <input type="number" id="samplePopulation" placeholder="Kosongkan jika populasi besar/tidak diketahui" />
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="calculateSample()">Hitung Ukuran Sampel</button>
+            <button class="btn btn-danger" onclick="resetSample()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Kalkulator Ukuran Sampel</h3>
+          <div id="sampleResult" class="result-box empty-state">Belum ada hasil ukuran sampel.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('sampleInterpretation')">
+            Lihat Interpretasi Ukuran Sampel
+          </button>
+
+          <div id="sampleInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Ukuran Sampel</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah perhitungan dilakukan.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UJI HIPOTESIS -->
+      <section id="hypothesisSection" class="content-section">
+        <div class="card">
+          <h2>Uji Hipotesis (Z Test Satu Sampel Proporsi)</h2>
+          <p class="section-desc">
+            Menu ini digunakan untuk menguji proporsi sampel terhadap proporsi hipotesis.
+          </p>
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="hypothesisP">Proporsi Sampel (p̂)</label>
+              <input type="number" id="hypothesisP" step="0.001" placeholder="Contoh: 0.78" />
+            </div>
+
+            <div class="input-group">
+              <label for="hypothesisP0">Proporsi Hipotesis (p₀)</label>
+              <input type="number" id="hypothesisP0" step="0.001" placeholder="Contoh: 0.70" />
+            </div>
+
+            <div class="input-group">
+              <label for="hypothesisN">Ukuran Sampel (n)</label>
+              <input type="number" id="hypothesisN" placeholder="Contoh: 385" />
+            </div>
+
+            <div class="input-group">
+              <label for="hypothesisAlpha">Taraf Signifikansi (α)</label>
+              <select id="hypothesisAlpha">
+                <option value="0.10">0,10</option>
+                <option value="0.05" selected>0,05</option>
+                <option value="0.01">0,01</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="runHypothesis()">Hitung Uji Hipotesis</button>
+            <button class="btn btn-secondary" onclick="fillHypothesisExample()">Contoh Data</button>
+            <button class="btn btn-danger" onclick="resetHypothesis()">Reset</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Hasil Uji Hipotesis</h3>
+          <div id="hypothesisResult" class="result-box empty-state">Belum ada hasil uji hipotesis.</div>
+
+          <button class="toggle-btn" onclick="toggleInterpretation('hypothesisInterpretation')">
+            Lihat Interpretasi Uji Hipotesis
+          </button>
+
+          <div id="hypothesisInterpretation" class="interpretation-box hidden-box">
+            <h4>Interpretasi Uji Hipotesis</h4>
+            <div class="empty-state small">Interpretasi akan muncul setelah perhitungan dilakukan.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
